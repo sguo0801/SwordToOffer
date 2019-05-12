@@ -13,3 +13,16 @@ public class Solution11 {
 
     }
 }
+//使用 n&(n-1)j进行判断.
+//public class Solution {
+//    public int NumberOf1(int n) {
+//        int count = 0;
+//
+//        while(n != 0){  //说明n不是0
+//            count++;
+//            n = n & (n - 1);
+//        }
+//        return count;
+//
+//    }
+//}

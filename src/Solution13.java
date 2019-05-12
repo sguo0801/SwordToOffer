@@ -7,7 +7,7 @@ public class Solution13 {
         int i = 0, j;
         while (i < array.length) {  //是大循环
             while (i < array.length && !isEven(array[i])) {
-                i++;
+                i++;  //奇数直接后移
             }
             //已经找到第一个偶数啦.
             j = i + 1;

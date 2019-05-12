@@ -7,8 +7,8 @@ public class Solution19 {
         int tC = 0;
         int dR = matrix.length - 1;
         int dC = matrix[0].length - 1;
-        while (tR <= dR && tC <= dC){  //左上边界最多到达右下边界, 用于判断是否还是剥圈打印
-            printEdge(matrix, tR++, tC++, dR--, dC--);
+        while (tR <= dR && tC <= dC){  //左上边界最多到达右下边界,用于判断是否还是剥圈打印
+            printEdge(matrix, tR++, tC++, dR--, dC--);  //执行方法之后再++--,
         }
         return a;
     }
@@ -18,7 +18,7 @@ public class Solution19 {
             for (int i = tC; i <= dC; i++){
                 a.add(m[tR][i]);
             }
-        }else if (tC == dC){  //再判断是否只是一竖列,如果是,打印该横行的列(通常位与内圈.
+        }else if (tC == dC){  //再判断是否只是一竖列,如果是,打印该列的一竖(通常位与内圈.
             for (int i = tR; i <= dR; i++){
                 a.add(m[i][tC]);
             }

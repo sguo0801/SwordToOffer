@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Solution3_1 {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> arrayList = new ArrayList<>();
-        if (listNode != null ) {
+        if (listNode != null ) {  //递归用if截止
             if (listNode.next != null) {  //知道下一个为空,则直接把值给listNode.
                 arrayList = printListFromTailToHead(listNode.next);
             }

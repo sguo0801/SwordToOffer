@@ -17,7 +17,7 @@ public class Solution3 {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         //这里用栈
         Stack<Integer>  stack = new Stack<>();
-        while (listNode != null){
+        while (listNode != null){  //遍历用while循环
             stack.push(listNode.val);
             listNode = listNode.next;
         }
