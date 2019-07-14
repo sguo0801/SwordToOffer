@@ -1,4 +1,5 @@
 public class Solution13 {
+    //##新答案更好.插入排序.
     //调整数组顺序使奇数位与偶数前面
     public void reOrderArray(int [] array) {
         if (array == null || array.length <= 1) {

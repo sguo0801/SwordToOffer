@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 //顺时针打印矩阵 不会!!
 public class Solution19 {
-    ArrayList<Integer> a = new ArrayList<>();
+    private ArrayList<Integer> a = new ArrayList<>();
     public ArrayList<Integer> printMatrix(int [][] matrix) {
         int tR = 0;
         int tC = 0;
@@ -22,6 +22,7 @@ public class Solution19 {
             for (int i = tR; i <= dR; i++){
                 a.add(m[i][tC]);
             }
+            //外侧
         }else {
             int curC = tC;  //用两个变量存储,用于判断当前位置.
             int curR = tR;
