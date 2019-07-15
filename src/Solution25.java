@@ -37,9 +37,9 @@ public class Solution25 {
 
         //第三遍进行分离两条链.
         list = pHead;
-        RandomListNode res = null;  //作为新链表的头结点,后面的返回值.
+        RandomListNode res = null;  //作为新链表的固定头结点,后面的返回值.
         RandomListNode temp = null;  //作为分离出来的过渡节点.
-        RandomListNode newlist = null;  //就是新链,复制出来的末端节点.
+        RandomListNode newlist = null;  //就是新链,复制出来的末端节点后移.
         while (list != null){
             temp = list.next;
             list.next = list.next.next;  //原始链表的连接

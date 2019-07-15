@@ -20,9 +20,10 @@ public class Solution29 {
                 queue.offer(input[i]);
             }
         }
-        for(Integer integer : queue){
-            res.add(integer);
-        }
+        res.addAll(queue);  //##用addAll添加容器内所有元素即可
+//        for(Integer integer : queue){
+//            res.add(integer);
+//        }
         return res;
     }
 }

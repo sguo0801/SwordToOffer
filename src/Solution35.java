@@ -1,4 +1,6 @@
 public class Solution35 {
+    //归并排序
+    //https://www.nowcoder.com/questionTerminal/96bd6684e04a44eb80e6a68efc0ec6c5
     public int InversePairs(int[] array) {
         if (array == null || array.length == 0) {
             return 0;
