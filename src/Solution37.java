@@ -2,7 +2,7 @@ public class Solution37 {
     public int GetNumberOfK(int[] array, int k) {
         return stateNum(array, k + 0.5) - stateNum(array, k - 0.5);
     }
-
+//返回的一定是low,这里切记!,两个k在新位置的差值就是个数
     public int stateNum(int[] array, double k) {
         int low = 0;
         int high = array.length - 1;
