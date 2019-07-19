@@ -25,7 +25,7 @@ public class Solution63 {
 
     public Double GetMedian() {
         if ((count & 1) == 1) {//说明为奇数,最后一次多插了一下小根堆
-            return new Double(minHeap.peek());
+            return new Double(minHeap.peek());   //##这边获取值用的是peek.
         } else {
             return new Double((minHeap.peek() + maxHeap.peek())) / 2; // Double类型不能用位运算>>1.只能最后/2
         }
